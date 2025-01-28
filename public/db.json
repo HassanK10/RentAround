@@ -1,0 +1,100 @@
+{
+  "cards": [
+    {
+      "id": "1",
+      "title": "New Apartments",
+      "price": "100.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/bf068804-dde1-4ef5-bd6e-2446b96eb9cf/images/1737108674_camden-atlantic-apartments-plantation-fl-pool-at-dusk-view.webp",
+      "addressimage":"https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "2",
+      "title": "New Latest Car",
+      "price": "20.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/b5c1a994-538f-4865-b42e-5442e5cbb5ad/images/1737108208_bugatti-centodieci.webp",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "3",
+      "title": "AppPic",
+      "price": "123.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/102f7f2d-f9eb-4486-acd8-845bb07700f3/images/1734609161_358CF2C6-8FD3-4BED-B457-C70DB305056D.webp",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "4",
+      "title": "Ios Laptop",
+      "price": "50.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/3a6bcd40-26c6-443a-8984-190316f22ee4/images/1734607563_5F17C59D-27DD-4F0E-83DF-A24E4D34BB73.webp",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "5",
+      "title": "Tiny home in Mueang Ngai, Thailand",
+      "price": "73.00",
+      "address": "Thailand Cafe, 95 2nd Ave, New York, New York 10003,",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/bbc8e797-77a3-426a-bf61-2c0411b315fb/images/1734525401_White-Designed-Tiny-Highland-House-1.webp",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "6",
+      "title": "Sports Car New",
+      "price": "20.00",
+      "address": "Farid Gate Rd, Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/22cb32c9-08be-41e7-87ed-760efa664542/images/1734417193_18015-MC20BluInfinito-scaled-e1707920217641.webp",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "7",
+      "title": "Apartment 1",
+      "price": "10.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/bfca2d88-ca3c-4ce0-817b-cd1e17f0583c/images/1734416145_rn_image_picker_lib_temp_007b764d-573f-4939-8aa3-7d0def8e4d77.webp",
+      "addressimage":"https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "8",
+      "title": "Apartments",
+      "price": "10.00",
+      "address": "Allied Bank, Farid Gate Road, Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/3c761ae6-c7b5-4c23-a501-cf923452183e/images/1734353908_images(12).webp",
+      "addressimage":"https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "9",
+      "title": "Best Cars",
+      "price": "130.00",
+      "address": "Sindh, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/d7873aaa-e122-4e4f-a942-c70340e258ca/images/1734349230_rn_image_picker_lib_temp_ceb575d0-f56c-4c38-87b5-429b65f6a112.webp",
+      "addressimage":"https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "10",
+      "title": "New Car",
+      "price": "10.00",
+      "address": "shell, Farid Gate Road, Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/01466217-0fda-4e3a-a8de-e00adaee6084/images/1734349063_most-powerful-cars-in-the-world.webp",
+      "addressimage":"https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "11",
+      "title": "Sports Car",
+      "price": "10.00",
+      "address": "Shell, Farid Gate Road, Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/8199a33c-ea36-47de-835f-4d164bdb61e9/images/1734348804_images(11).webp",
+      "addressimage":"https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    },
+    {
+      "id": "12",
+      "title": "My Car",
+      "price": "10.00",
+      "address": "Bahawalpur, Punjab, Pakistan",
+      "image": "https://ik.imagekit.io/apxxszpa3h/product/e939fc7c-bf1f-469c-9939-e03b390a031c/images/1734334129_A-Guide-to-Electric-Cars-in-Pakistan-Featured-Image.webp",
+      "addressimage": "https://app-test.rentarround.com/_next/static/media/location.cd4276d4.svg"
+    }
+  ]
+}
