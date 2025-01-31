@@ -1,5 +1,3 @@
-<<<<<<< HEAD
+
+/// <reference types="react-scr<<<<<<< HEADipts" />
 /// <reference types="react-scripts" />
-=======
-/// <reference types="react-scripts" />
->>>>>>> 7275fd8 (Commit)

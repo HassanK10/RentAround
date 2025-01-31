@@ -1,12 +1,9 @@
 import React from "react";
 import "../App.css";
+import "../Responsive.css";
 import { useState } from "react";
-// const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-//   const services = document.getElementById("services-2")!;
-//   services.style.display = "none";
-// };
 const Page4 = () => {
-  const [activeTab, setActiveTab] = useState("Buyers"); // Default to "buyers"
+  const [activeTab, setActiveTab] = useState("Buyers");
   const [, setButton] = useState("Buyers");
 
   const handleClick = (tab: string) => {

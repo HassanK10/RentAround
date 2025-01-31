@@ -1,0 +1,984 @@
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: clip;
+  }
+  .NavP-2 li a {
+    display: none;
+  }
+  .dropdown-menuu {
+    display: block;
+  }
+  .dropdown-menu2 {
+    display: none;
+  }
+  .NavBar {
+    height: 36vh;
+    width: 100%;
+  }
+  .NavBar .menu-icon {
+    display: block;
+    font-size: 7vw;
+    position: relative;
+    left: -2%;
+    top: -2%;
+  }
+  .profile {
+    display: none;
+  }
+  .header-logo img {
+    height: 30vw;
+    width: 30vw;
+    position: relative;
+    left: 10%;
+  }
+  .NavBar button {
+    padding: 14px 4px;
+    position: relative;
+    left: -5%;
+  }
+  .bag {
+    position: relative;
+    left: 78%;
+  }
+  .lang {
+    position: relative;
+    left: 85%;
+  }
+  .search-container {
+    position: absolute;
+    top: 17%;
+    left: 0;
+    height: 15vw;
+    width: 100%;
+  }
+  .search-box {
+    top: -40%;
+    left: 0;
+    width: 100%;
+  }
+  .search-box .S-Location {
+    width: 27%;
+    font-size: 3.2vw;
+    font-weight: 600;
+  }
+  .search-box .S-Product {
+    font-size: 3.3vw;
+    font-weight: 600;
+  }
+  .search-box span {
+    font-size: 6.5vw;
+  }
+  .Page-1 {
+    height: 130vh;
+    position: relative;
+  }
+  .Page-1 .mobile img {
+    width: 65vw;
+    position: relative;
+    top: 23%;
+  }
+  .Page-1 .col-lg-6:nth-child(2) {
+    position: absolute;
+    bottom: -120%;
+  }
+  .Page-1 h1 {
+    position: absolute;
+    top: -27%;
+    font-size: 8vw;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .Page-1 p {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+  .App h3 {
+    text-align: center;
+    font-size: 5vw;
+  }
+  .Page-1 .App img {
+    height: 20vw;
+    width: 20vw;
+    border-radius: 10px;
+  }
+  .Store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Store img {
+    height: 30vw;
+    width: 30vw;
+    margin: 0;
+  }
+  .Page-2 .card {
+    height: 85vw;
+    width: 99%;
+  }
+  .card .card-img-top {
+    height: 43vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .card .card-title {
+    font-size: 4vw;
+  }
+  .card .add {
+    position: absolute;
+    bottom: -3%;
+    left: 3%;
+    font-size: 3.5vw;
+  }
+  .Page-3 {
+    height: 150vh;
+    position: relative;
+  }
+  .Page3P-2 {
+    position: relative;
+    border-radius: 20px;
+    height: 100vh;
+    width: 100%;
+  }
+  .Page3P-2 .left {
+    position: absolute;
+    width: 100%;
+    left: 10%;
+    top: 10%;
+  }
+  .Page3P-2 .left p {
+    white-space: nowrap;
+    font-size: 6vw;
+  }
+  .Page3P-2 .left h4 {
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+  }
+  .Page3P-2 .right {
+    position: absolute;
+    left: 8%;
+    top: 62%;
+  }
+  .Page3P-2 .right video {
+    height: 32vh;
+    width: 80vw;
+  }
+  .Page-3 h1 {
+    position: absolute;
+    white-space: nowrap;
+    left: 14%;
+    bottom: 7%;
+    font-size: 6vw;
+  }
+  .Page-4 {
+    height: 100vh;
+    position: relative;
+  }
+  .Page-4 .work {
+    font-size: 5.5vw;
+    position: absolute;
+    top: 5%;
+    left: 33%;
+  }
+  .Page-4 button {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 55%;
+    left: 27%;
+  }
+  .buttons {
+    padding: 3.5vw 10vw;
+    margin-bottom: 2vw;
+    font-size: 5vw;
+  }
+  .page4.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 60vw;
+    width: 28vw;
+  }
+  .services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 80%;
+  }
+  .Page-5 h2 {
+    font-size: 6vw;
+  }
+  .Page-6 {
+    height: 150vh;
+  }
+  .Page-6 .bottom {
+    position: relative;
+    top: 8%;
+  }
+  .bottom p {
+    font-size: 3.5vw;
+  }
+  .bottom-logo {
+    height: 18vw;
+  }
+  .copy-right {
+    font-size: 3vw;
+  }
+  .rights {
+    font-size: 3vw;
+  }
+  .information {
+    position: relative;
+    left: 0%;
+  }
+  .information h5 {
+    font-size: 4.5vw;
+  }
+  .information li a {
+    font-size: 3.4vw;
+  }
+  .categories h5 {
+    font-size: 4.5vw;
+  }
+  .categories li a {
+    font-size: 3.4vw;
+  }
+  .social-media h5 {
+    font-size: 4.5vw;
+  }
+  .social-media li a {
+    text-decoration: underline;
+    color: #303b97;
+    font-size: 3.8vw;
+  }
+  .cart-right {
+    position: relative;
+    bottom: 10%;
+    width: 100%;
+    height: 155vh;
+  }
+  .cart-left {
+    width: 100%;
+  }
+  .price-container .price h2 {
+    font-size: 4vw;
+  }
+  .cart-left .cart-title {
+    font-size: 4vw;
+  }
+  .cart-left .cart-image {
+    width: 90%;
+    height: 60vw;
+  }
+  .cart-left .product-description {
+    width: 90%;
+    height: 13vw;
+    margin-bottom: 5vw;
+  }
+  .cart-left .description{
+    width: 90%;
+    height: 13vw;
+  }
+  .cart-left h2 {
+    font-size: 4vw;
+    padding: 2vw 0 0 2vw;
+  }
+  .cart-left .description p{
+    padding: 2vw 0 0 2vw;
+  }
+  .price .price2{
+    position: absolute;
+    right: 3%;
+  }
+  .cart-button{
+    padding: 2vw 13vw;
+    margin-bottom: 5vw;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 400px) {
+  .Page-2 .card {
+    height: 95vw;
+  }
+  .dropdown-menuu {
+    display: block;
+  }
+  .dropdown-menu2 {
+    display: none;
+  }
+  .search-box .S-Location {
+    position: relative;
+    left: 2%;
+  }
+  .search-box .search-icon {
+    height: 9vw;
+  }
+  .Page-2 .card .price {
+    position: absolute;
+    bottom: 5%;
+  }
+  .card .add {
+    position: relative;
+    left: -1%;
+    bottom: -25%;
+  }
+  .page4.card {
+    width: 30vw;
+    height: 100vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  .NavBar .menu-icon {
+    display: block;
+    font-size: 7vw;
+    position: relative;
+    left: -2%;
+    top: -2%;
+  }
+  .dropdown-menuu {
+    display: block;
+  }
+  .dropdown-menu2 {
+    display: none;
+  }
+  .header-logo img {
+    height: 30vw;
+    width: 30vw;
+    position: relative;
+    left: 0;
+  }
+  .NavBar button {
+    padding: 14px 4px;
+    position: relative;
+    left: -9%;
+  }
+  .bag {
+    position: relative;
+    left: 73%;
+  }
+  .lang {
+    position: relative;
+    left: 81%;
+  }
+  .NavBar .menu-icon {
+    font-size: 8vw;
+    position: relative;
+    left: -3%;
+    top: -1.8%;
+  }
+  .search-box .S-Location {
+    position: relative;
+    left: 1%;
+  }
+  .search-box .search-icon {
+    height: 10vw;
+  }
+  .Page-2 .card {
+    height: 110vw;
+  }
+  .add img {
+    font-size: 2vw;
+  }
+  .Page-2 .card .card-title {
+    font-size: 6vw;
+    position: absolute;
+    bottom: 13%;
+    left: 4%;
+  }
+  .card .price {
+    position: absolute;
+    top: 85%;
+    left: 4%;
+  }
+  .Page-6 .bottom {
+    position: relative;
+    top: 6%;
+  }
+  .bottom-logo {
+    height: 24vw;
+  }
+  .bottom p {
+    font-size: 4vw;
+  }
+  .copy-right {
+    font-size: 4vw;
+  }
+  .rights {
+    font-size: 4vw;
+  }
+  .information h5 {
+    font-size: 6vw;
+  }
+  .categories h5 {
+    font-size: 6vw;
+  }
+  .social-media h5 {
+    font-size: 6vw;
+  }
+  .bottom li a {
+    font-size: 4.9vw;
+  }
+  .cart-right{
+    position: relative;
+  }
+  .price{
+    position: relative;
+    top: 0;
+  }
+  .price .price2{
+    position: absolute;
+    right: -19%;
+  }
+  .total-container .h2{
+    position: absolute;
+    right: 5%;
+  }
+  .total-container button{
+    padding: 1.5vw 9vw;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  body,
+  html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .NavBar {
+    height: 40vh;
+  }
+  .dropdown-menuu {
+    display: block;
+  }
+  .dropdown-menu2 {
+    display: none;
+  }
+  .NavP-2 li a {
+    display: none;
+  }
+  .NavBar .header-logo img {
+    height: 9vw;
+  }
+  .dropdown-menuu {
+    width: 25vw;
+    position: absolute;
+    top: 65%;
+    right: 8%;
+  }
+  .NavBar button {
+    position: relative;
+    left: 0%;
+    padding: 13px 10px;
+  }
+  .bag {
+    position: relative;
+    left: 72%;
+  }
+  .lang {
+    position: relative;
+    left: 77%;
+    bottom: 44.4%;
+  }
+  .NavBar .profile {
+    height: 6vw;
+    width: 14vw;
+  }
+  .profile .nav-img {
+    font-size: 4vw;
+    position: relative;
+    top: -8%;
+  }
+  .profile .profile-img {
+    height: 4vw;
+  }
+  .search-container {
+    width: 90%;
+    height: 8vw;
+    position: absolute;
+    left: 5%;
+    top: 23%;
+  }
+  .search-box span {
+    font-size: 3.5vw;
+  }
+  .Page-1 {
+    position: relative;
+  }
+  .Page-1 .col-lg-6:nth-child(2) {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+  }
+  .Page-1 .mobile img {
+    height: 36vw;
+  }
+  .Page-1 h1 {
+    font-size: 7vw;
+  }
+  .Page-1 p {
+    font-size: 2.5vw;
+  }
+  .App h3 {
+    font-size: 5vw;
+  }
+  .Page-1 .App img {
+    height: 10vw;
+    border-radius: 8px;
+  }
+  .Store img {
+    height: 5vw;
+  }
+  .Page-2 .card {
+    height: 46vw;
+    width: 46.5vw;
+  }
+  .card .card-img-top {
+    height: 32vw;
+  }
+  .card .title {
+    font-size: 2.6vw;
+  }
+  .card .price {
+    position: absolute;
+    bottom: 7%;
+  }
+  .card .add {
+    font-size: 1.7vw;
+  }
+  .Page-3 {
+    height: 170vh;
+    width: 100%;
+  }
+  .Page3P-2 {
+    height: 110vh;
+    width: 97vw;
+  }
+  .Page3P-2 .left {
+    width: 100%;
+    position: relative;
+    top: 10%;
+    left: 7%;
+  }
+  .left p {
+    font-size: 3vw;
+  }
+  .left h4 {
+    font-size: 4vw;
+    width: 85%;
+  }
+  .Page3P-2 .right {
+    position: relative;
+    bottom: -22%;
+    left: -45%;
+  }
+  .Page3P-2 .right video {
+    height: 47vw;
+    width: 92%;
+  }
+  .Page-3 h1 {
+    font-size: 6vw;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: -2%;
+  }
+  .Page-4 h1 {
+    font-size: 6vw;
+    position: relative;
+    left: 30%;
+    top: 20%;
+  }
+  .Page-4 .buttons {
+    padding: 2.2vw 6vw;
+    position: relative;
+    left: 22%;
+    top: 25%;
+    font-size: 2.8vw;
+  }
+  .services {
+    position: relative;
+    top: 50%;
+  }
+  .page4.card {
+    height: 32vw;
+  }
+  .Page-5 h2 {
+    font-size: 6vw;
+  }
+  .Page-6 {
+    height: 140vh;
+    width: 100%;
+    position: relative;
+  }
+  .Page-6 .bottom-logo {
+    height: 10vw;
+  }
+  .Page-6 .bottom {
+    position: relative;
+    top: 13%;
+  }
+  .bottom p {
+    font-size: 2vw;
+    width: 30vw;
+    height: 19vw;
+  }
+  .bottom p span {
+    font-size: 1.8vw;
+  }
+  .categories {
+    position: absolute;
+    bottom: -60%;
+  }
+  .social-media li a {
+    font-size: 2vw;
+  }
+  .social-media {
+    position: absolute;
+    bottom: -60%;
+    right: 20%;
+  }
+  .information {
+    position: absolute;
+    left: 46%;
+    top: 30%;
+  }
+  .cart-left .cart-title{
+    font-size: 3vw;
+  }
+  .cart-image{
+    width: 98%;
+    height: 60vw;
+  }
+  .cart-left .product-description{
+    width: 98%;
+    height: 7vw;
+    padding: 1.5vw 0 0 1.5vw;
+  }
+  .cart-left .description{
+    width: 98%;
+    height: 7vw;
+    padding: 1.5vw 0 0 1.5vw;
+  }
+  .description h2{
+    font-size: 2.8vw;
+  }
+  .product-description h2{
+    font-size: 2.8vw;
+  }
+  .cart-right{
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+    height: 165vh;
+  }
+  .price h2{
+    font-size: 2.4vw;
+  }
+  .price .price2{
+    position: absolute;
+    right: 3.8%;
+  }
+  .cart-button{
+    padding: 2vw 18vw;
+    margin-bottom: 5vw;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .NavBar {
+    height: 28vh;
+  }
+  .NavP-2 li a {
+    display: none;
+  }
+  .NavBar .header-logo {
+    position: relative;
+    top: 6%;
+    left: 0.5%;
+  }
+  .NavBar .header-logo img {
+    height: 5.5vw;
+  }
+  .NavBar button {
+    position: relative;
+    top: 6%;
+    left: 9%;
+    padding: 1.2vw 1.5vw;
+  }
+  .bag {
+    position: relative;
+    left: 79.5%;
+    top: 47%;
+  }
+  .lang {
+    position: relative;
+    left: 83%;
+    top: 48%;
+  }
+  .NavBar .profile {
+    height: 4.5vw;
+    width: 9.5vw;
+    position: relative;
+    right: 4%;
+    top: 4.8%;
+  }
+  .profile .nav-img {
+    font-size: 3vw;
+    position: relative;
+    top: -8%;
+  }
+  .profile .profile-img {
+    height: 3vw;
+  }
+  .dropdown-menuu {
+    width: 19vw;
+    position: absolute;
+    top: 63%;
+  }
+  .search-container {
+    width: 70%;
+    height: 6.5vw;
+    position: relative;
+    left: 15%;
+    top: -50%;
+  }
+  .search-box span {
+    font-size: 2.8vw;
+  }
+  .Page-1 .mobile img {
+    margin-top: 4vw;
+    height: 35vw;
+  }
+  .Page-1 h1 {
+    font-size: 5vw;
+  }
+  .Page-1 p {
+    font-size: 2vw;
+  }
+  .App h3 {
+    font-size: 3.5vw;
+  }
+  .Page-1 .App img {
+    height: 8vw;
+  }
+  .Page-1 .Store img {
+    height: 3.5vw;
+  }
+  .Page-2 .card {
+    width: 23vw;
+    height: 33vw;
+  }
+  .card .card-img-top {
+    height: 24vw;
+  }
+  .card .title {
+    font-size: 1.8vw;
+  }
+  .card .price {
+    font-size: 1.6vw;
+    position: relative;
+    bottom: 10%;
+  }
+  .card .add {
+    font-size: 1.4vw;
+    position: relative;
+    bottom: 40%;
+    left: -3%;
+  }
+  .Page-3 {
+    height: 135vh;
+  }
+  .Page-3 p {
+    font-size: 3vw;
+  }
+  .Page-3 .left h4 {
+    font-size: 3vw;
+  }
+  .Page-3 .right {
+    position: absolute;
+    top: 13%;
+    right: 53%;
+  }
+  .Page-4 {
+    height: 70vh;
+  }
+  .page4.card {
+    height: 30vw;
+  }
+  .Page-4 .work {
+    position: relative;
+    left: 35%;
+  }
+  .Page-4 h1 {
+    font-size: 6vw;
+  }
+  .Page-4 .buttons {
+    padding: 1.5vw 5vw;
+    font-size: 2.3vw;
+    position: relative;
+    left: 32%;
+  }
+  .Page-5 .test-cards {
+    height: 75vh;
+  }
+  .Page-6 {
+    height: 73vh;
+  }
+  .Page-6 p {
+    font-size: 1.3vw;
+    width: 27vw;
+  }
+  .bottom-logo {
+    height: 7vw;
+  }
+  .copy-right {
+    font-size: 1.5vw;
+  }
+  .rights {
+    font-size: 1.5vw;
+  }
+  .sections li a {
+    font-size: 1.5vw;
+  }
+  .social-media li a {
+    font-size: 1.5vw;
+  }
+  .cart-left .description{
+    height: 4vw;
+  }
+  .price h2{
+    font-size: 1.7vw;
+  }
+  .price .price2{
+    position: absolute;
+    right: 7%;
+  }
+  .cart-button{
+    padding: 0.9vw 5vw;
+    margin-bottom: 2vw;
+  }
+  .Add-To-Cart{
+    height: 170vh;
+  }
+  .cart-right .map{
+    width: 39vw;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1500px) {
+  .NavBar {
+    height: 17vh;
+  }
+  .dropdown-menu2 {
+    position: absolute;
+    top: 75%;
+    right: 9%;
+  }
+  .NavP-2 li a {
+    display: block;
+    font-size: 1.3vw;
+  }
+  .NavBar .header-logo img {
+    height: 4vw;
+    position: relative;
+    left: 40%;
+  }
+  .NavP-2 {
+    position: relative;
+    top: 5%;
+    left: 0%;
+  }
+  .NavBar button {
+    position: relative;
+    left: 0;
+    padding: 0.9vw 1vw;
+    font-size: 1.5vw;
+  }
+  .bag {
+    position: relative;
+    left: 79%;
+  }
+  .lang {
+    position: relative;
+    left: 81.5%;
+  }
+  .NavBar .profile {
+    position: relative;
+    right: 7%;
+    height: 4vw;
+    width: 9vw;
+  }
+  .profile .nav-img {
+    font-size: 2.5vw;
+  }
+  .profile .profile-img {
+    height: 2.7vw;
+  }
+  .search-container {
+    width: 50%;
+    height: 5vw;
+    position: relative;
+    left: 25%;
+  }
+  .Page3P-2 {
+    width: 90vw;
+    height: 50vh;
+    position: relative;
+    left: 4%;
+  }
+  .Page-3 {
+    height: 120vh;
+  }
+  .Page3P-2 .left h4 {
+    font-size: 2vw;
+  }
+  .Page3P-2 .right {
+    position: relative;
+    top: -28%;
+    right: 2%;
+  }
+  .right video {
+    height: 20vw;
+    width: 45vw;
+  }
+  .Page-5 .test-cards {
+    height: 45vh;
+  }
+  .Page-6 {
+    height: 50vh;
+  }
+  .Page-6 .bottom .bottom-logo {
+    height: 5vw;
+  }
+  .Page-6 p {
+    font-size: 1vw;
+  }
+  .copy-right {
+    font-size: 1vw;
+  }
+  .rights {
+    font-size: 1vw;
+  }
+  .Page-6 .sections li a {
+    font-size: 1.2vw;
+  }
+  .social-media li a {
+    font-size: 1.2vw;
+  }
+  .cart-button{
+    padding: 1vw 6vw;
+  }
+  .Add-To-Cart{
+    height: 110vh;
+  }
+}

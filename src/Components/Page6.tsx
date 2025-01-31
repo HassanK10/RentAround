@@ -1,5 +1,8 @@
 import React from "react";
 import "../App.css";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { TbBrandLinkedinFilled } from "react-icons/tb";
+import { SiFacebook } from "react-icons/si";
 import bottomlogo from "../assets/bottomlogo.svg";
 import playStore from "../assets/playStore.svg";
 import appStore from "../assets/appStore.svg";
@@ -17,12 +20,12 @@ const Page6 = () => {
               activities to properties and services—all at your <br />
               fingertips on Rentaround.
             </p>
-            <p>
+            <p className="adv">
               <span className="copy-right">© Rent Around</span>
               <span className="rights">All Rights Reserved</span>
             </p>
           </div>
-          <div className="col-md-2 mb-4 sections">
+          <div className="col-md-2 mb-4 sections information">
             <h5>Information</h5>
             <ul className="list-unstyled">
               <li>
@@ -42,7 +45,7 @@ const Page6 = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-2 mb-4">
+          <div className="col-md-2 mb-4 categories">
             <h5>Categories</h5>
             <ul className="list-unstyled">
               <li>
@@ -72,22 +75,25 @@ const Page6 = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-4 social-media">
             <h5>Social Media</h5>
             <ul className="list-unstyled">
               <li>
                 <NavLink to="/" className="socials">
-                  <i className="bi bi-facebook social"></i> Facebook
+                  <SiFacebook />
+                  Facebook
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/">
-                  <i className="bi bi-instagram social"></i> Instagram
+                  <FaSquareInstagram />
+                  Instagram
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/" className="socials">
-                  <i className="bi bi-linkedin social"></i> LinkedIn
+                  <TbBrandLinkedinFilled />
+                  LinkedIn
                 </NavLink>
               </li>
             </ul>

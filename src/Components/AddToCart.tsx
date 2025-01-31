@@ -77,7 +77,7 @@ const AddToCart= () => {
                   <div className="pricing">
                     <div className="price">
                       <h2>Price</h2>
-                      <h2>&#8364;{card.price}</h2>
+                      <h2 className="price2">&#8364;{card.price}</h2>
                     </div>
                     <div className="date-picker">
                       <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -117,6 +117,7 @@ const AddToCart= () => {
                     justifyContent: "center",
                     marginTop: "3.5vw",
                   }}
+                  className="map"
                 >
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3475.9481664299196!2d71.71211367498562!3d29.40107234876753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b91b06dcbcb9b%3A0xb4d44444d2e8acdd!2sCommercial%20area!5e0!3m2!1sen!2s!4v1738063213152!5m2!1sen!2s"

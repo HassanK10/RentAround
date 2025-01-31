@@ -1,11 +1,12 @@
 import React from "react";
-import "../App.css"
+import "../Responsive.css"
+import "../App.css";
 
 const Page3 = () => {
   return (
     <div className="container-fluid Page-3" style={{ overflowX: "hidden" }}>
       <div className="row">
-        <div className="col-lg-12">
+        <div className="col-lg-12 col-md-6">
           <div className="Page3P-2">
             <div className="col-lg-4.5 left">
               <p>Take a video Tour</p>
@@ -20,7 +21,7 @@ const Page3 = () => {
                 controls
                 autoFocus
                 className="my-video"
-                style={{borderRadius:"20px",}}
+                style={{ borderRadius: "20px" }}
               ></video>
             </div>
           </div>

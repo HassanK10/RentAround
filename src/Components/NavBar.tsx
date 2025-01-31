@@ -7,15 +7,20 @@ import profile from "../assets/profile.svg";
 import lang from "../assets/lang.svg";
 import locationBlue from "../assets/locationBlue.svg";
 import globalSearch from "../assets/globalSearch.svg";
+import "../Responsive.css";
 import "../App.css";
+import { HiMenuAlt2 } from "react-icons/hi";
 import { useSearch } from "./SearchContext";
 import Cart from "./Cart";
 
-
 const handleClick = () => {
-  <Cart></Cart>
+  <Cart></Cart>;
 };
 const NavBar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<Boolean>(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   const { searchQuery, setSearchQuery } = useSearch();
   const [tempQuery, setTempQuery] = useState("");
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -42,7 +47,7 @@ const NavBar: React.FC = () => {
           <div className="col-lg-12 col-sm-12 d-flex">
             <div className="NavBar col-lg-12 col-sm-12 d-flex">
               <div className="header-logo">
-                <img src={logo} alt="" />
+                <img src={logo} alt="" className="header-image" />
               </div>
               <div className="NavP-2 d-flex">
                 <li>
@@ -55,21 +60,57 @@ const NavBar: React.FC = () => {
                   <NavLink to="/Wishlist">Wishlist</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/MyListing">My Listing</NavLink>
-                </li>
-                <li>
                   <NavLink to="/Promotion">Promotion</NavLink>
                 </li>
               </div>
-              <button className="">Add Listing</button>
+              <button className="add-listing">
+                <span className="list-text">Add Listing</span>
+              </button>
               <NavLink className="bag" to="/Cart">
-                <img src={bag} alt=""  onClick={handleClick}/>
+                <img src={bag} alt="" onClick={handleClick} />
               </NavLink>
               <img src={lang} alt="" className="lang" />
-              <div className="profile border border-2 rounded-pill ">
-                <img src={navbar} alt="" className="nav-img" />
+              <div
+                className="profile border border-2 rounded-pill"
+                onClick={toggle}
+              >
+                <div className="nav-img">
+                  <HiMenuAlt2 />
+                </div>
                 <img src={profile} className="profile-img" alt="" />
               </div>
+              <div className="menu-icon" onClick={toggle}>
+                <HiMenuAlt2 />
+              </div>
+              {isOpen && (
+                <>
+                  <ul className="dropdown-menuu">
+                    <li>
+                      <NavLink to="/">Home</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/Categories">Categories</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/Wishlist">Wishlist</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/Promotion">Promotion</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/">Login/Register</NavLink>
+                    </li>
+                  </ul>
+                  <ul className="dropdown-menu2">
+                    <li>
+                      <NavLink to="/Promotion">Promotion</NavLink>
+                    </li>
+                    <li>
+                      <NavLink to="/">Login/Register</NavLink>
+                    </li>
+                  </ul>
+                </>
+              )}
             </div>
           </div>
         </div>

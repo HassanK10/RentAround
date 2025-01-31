@@ -2,7 +2,6 @@ import React from "react";
 import App from "./App";
 import Home from "./Components/Home";
 import Categories from "./Components/Categories";
-import MyListing from "./Components/MyListing";
 import Promotion from "./Components/Promotion";
 import Wishlist from "./Components/Wishlist";
 import Cart from "./Components/Cart";
@@ -43,14 +42,6 @@ const router = createBrowserRouter([
     element: (
       <>
         <Wishlist />
-      </>
-    ),
-  },
-  {
-    path: "/MyListing",
-    element: (
-      <>
-        <MyListing />
       </>
     ),
   },

@@ -202,7 +202,7 @@ function Page5() {
                   key={testimonial.id}
                   className="col-12 col-sm-6 col-lg-3 px-3 flex-shrink-0"
                 >
-                  <div className="bg-white rounded shadow p-4 h-100">
+                  <div className="bg-white rounded shadow p-4 h-100 test-cards">
                     <div className="d-flex mb-3">
                       {renderStars(testimonial.rating)}
                     </div>

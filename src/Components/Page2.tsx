@@ -2,6 +2,7 @@ import "../App.css";
 import "../loader.css";
 import "../button.css";
 import Cart from "./Cart";
+import "../Responsive.css"
 import { useQuery } from "@tanstack/react-query";
 import { useSearch } from "./SearchContext";
 import { NavLink } from "react-router-dom";

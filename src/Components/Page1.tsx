@@ -1,5 +1,6 @@
 import React from "react";
 import "../App.css";
+import "../Responsive.css"
 import QR from "../assets/QR.png";
 import PlayStore from "../assets/playStore.svg";
 import AppStore from "../assets/appStore.svg";
@@ -26,7 +27,7 @@ const Page1 = () => {
               <img src={AppStore} alt="" />
             </div>
           </div>
-          <div className="col-lg-6 col-sm-12">
+          <div className="col-lg-6 col-sm-12 mobile">
             <img src={Mobile} alt="" />
           </div>
         </div>
