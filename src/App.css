@@ -51,6 +51,13 @@ body {
   right: 15%;
   top: 15%;
 }
+.profile .menu-img{
+  height: 2vw;
+  width: 2vw;
+  position: absolute;
+  top: 17%;
+  border-radius: 50%;
+}
 .NavP-2 li {
   list-style: none;
 }
@@ -77,6 +84,7 @@ body {
   position: absolute;
   right: 16%;
   overflow: hidden;
+  border: 1px solid #303b97;
 }
 .NavBar button:hover {
   background-color: white;
@@ -511,7 +519,7 @@ ul li a:hover {
   right: 0;
   top: 9%;
 }
-.price-container{
+.price-container {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
 }
@@ -605,4 +613,277 @@ ul li a:hover {
 .dropdown-menuu2 li {
   padding: 8px;
   cursor: pointer;
+}
+.sign-in-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-content .header-logo {
+  position: relative;
+  left: 10%;
+  top: 5%;
+}
+.sign-in-content .header-img {
+  height: 5.4vw;
+}
+.sign-in-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  width: 90%;
+  max-width: 580px;
+  height: 78%;
+}
+.sign-in-content h3 {
+  position: relative;
+  left: 10%;
+  top: 11%;
+  font-size: 1.7vw;
+  font-weight: 600;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  bottom: -15%;
+  left: 10%;
+}
+
+.auth-form input {
+  padding: 0.5rem;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+  width: 75%;
+  color: black;
+}
+.auth-form input:hover {
+  border-color: #4096ff;
+}
+.auth-form input::placeholder {
+  color: #bfbfbf;
+}
+.auth-form p {
+  color: #6b7280;
+}
+.auth-form button {
+  background: #303b97;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out all;
+  width: 71%;
+  border: 1px solid #303b97;
+}
+.auth-form button:hover {
+  background: white;
+  color: #303b97;
+  border: 1px solid #303b97;
+}
+.sign-in-content .divider {
+  position: relative;
+  bottom: -18%;
+}
+.sign-in-content .google-login {
+  position: absolute;
+  bottom: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 15%;
+  padding: 1vw 7.5vw;
+  background-color: #f3f4f6;
+  border: 1px solid #111827;
+  border-radius: 5px;
+}
+.google-icon {
+  position: absolute;
+  left: 8%;
+  top: 17%;
+  font-size: 1.3vw;
+}
+.magic-link-btn {
+  background-color: #007bff;
+  color: white;
+  transition: all 0.3s ease;
+}
+.magic-link-btn.disabled-btn {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+.profile-container {
+  width: 90%;
+  position: relative;
+  height: 50vh;
+  margin: 2vw 0 10vw 0;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.profile-container .placeholder-img {
+  height: 11vw;
+  position: absolute;
+  left: 1%;
+  top: 28%;
+}
+.profile-container .profile-info {
+  position: absolute;
+  left: 20%;
+  top: 35%;
+}
+.profile-info h2 {
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: #374151;
+  position: relative;
+  left: 15%;
+}
+.profile-info p {
+  font-size: 1.3vw;
+  position: absolute;
+  left: 20%;
+  top: 90%;
+  color: #374151;
+}
+.profile-info p img {
+  position: absolute;
+  top: 10%;
+  right: -24%;
+}
+.profile-info .referals {
+  position: absolute;
+  bottom: -100%;
+  left: 30%;
+}
+.profile-info h6 {
+  color: #374151;
+  font-size: 700;
+}
+.edit-section {
+  position: relative;
+}
+.vertical-line {
+  position: relative;
+  left: -5%;
+  margin-top: 2vw;
+}
+.edit-section .profile-buttons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 3%;
+  top: 18%;
+}
+.profile-buttons a {
+  padding: 0.9vw 8vw;
+  background-color: #303b97;
+  margin-bottom: 1vw;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #303b97;
+  transition: 0.2s ease-in-out all;
+}
+.profile-buttons a:hover {
+  color: #4096ff;
+  border-color: #4096ff;
+  background-color: white;
+}
+.image-container {
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  top: 7%;
+}
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.camera-icon {
+  font-size: 32px;
+  color: #303b97;
+}
+.Edit-Profile {
+  position: relative;
+  margin: 6vw 0 8vw 0;
+}
+.upload {
+  height: 42vh;
+  width: 38vw;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  position: relative;
+  left: -1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 5vw;
+}
+.upload button {
+  position: absolute;
+  bottom: 7%;
+  padding: 0.8vw 6.2vw;
+  color: white;
+  background-color: #303b97;
+  border-radius: 5px;
+  border: 1px solid #303b97;
+  transition: 0.2s all ease-in-out;
+}
+.upload button:hover {
+  background-color: #fff;
+  color: #303b97;
+}
+.upload p {
+  position: absolute;
+  bottom: 25%;
+  color: #374151;
+  font-size: 1.3vw;
+}
+.information input {
+  border-color: #d9d9d9;
+}
+.information input:hover {
+  border-color: #4096ff;
+}
+.profile-container .profileImg{
+  height: 10vw;
+  width: 10.5vw;
+  border-radius: 5px;
+}
+.profile-info .my-name{
+  position: relative;
+  left: 7%;
 }

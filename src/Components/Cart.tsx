@@ -8,7 +8,7 @@ import { useCart } from "../Components/UseCart";
 
 const notify = () => toast.success("Deleted from Cart!");
 const notify2 = () => {
-  toast.success("You Will Recieve you Item within 2 days");
+  toast.success("You Will Recieve your Item within 2 days");
 };
 
 const Cart = () => {

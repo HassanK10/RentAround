@@ -27,7 +27,7 @@ const fetchCards = async (): Promise<Cards[]> => {
 };
 const notify = () => toast.success("Added To Cart!");
 
-const AddToCart= () => {
+const AddToCart = () => {
   const { title } = useParams<{ title: string }>();
   const { addItemToCart } = useCart();
   const {
@@ -105,10 +105,11 @@ const AddToCart= () => {
                         handleAddToCart();
                         notify();
                       }}
+                      style={{ marginBottom: "2vw" }}
                     >
                       Add To Cart
                     </button>
-                    <Toaster position="bottom-center"/>
+                    <Toaster position="bottom-center" />
                   </div>
                 </div>
                 <div

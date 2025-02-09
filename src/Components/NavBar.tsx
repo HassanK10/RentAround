@@ -2,27 +2,40 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import bag from "../assets/bag.svg";
-import navbar from "../assets/navbar.svg";
 import profile from "../assets/profile.svg";
 import lang from "../assets/lang.svg";
+import SignInPage from "./SignInPage";
 import locationBlue from "../assets/locationBlue.svg";
 import globalSearch from "../assets/globalSearch.svg";
-import "../Responsive.css";
-import "../App.css";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { useSearch } from "./SearchContext";
-import Cart from "./Cart";
+import { useAuth } from "../Context/AuthContext";
+import "../Responsive.css";
+import "../App.css";
 
-const handleClick = () => {
-  <Cart></Cart>;
-};
 const NavBar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState<Boolean>(false);
+  const profileImg = localStorage.getItem("profileImage")
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [showSignIn, setShowSignIn] = useState<boolean>(false);
+  const { setSearchQuery } = useSearch();
+  const [tempQuery, setTempQuery] = useState<string>("");
+  const { currentUser } = useAuth();
+  const { logOut } = useAuth();
+
+  const handleLogOut = async (e:React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    await logOut();
+  };
+
   const toggle = () => {
     setIsOpen(!isOpen);
   };
-  const { searchQuery, setSearchQuery } = useSearch();
-  const [tempQuery, setTempQuery] = useState("");
+
+  const toggleAuthModal = () => {
+    setShowSignIn(!showSignIn);
+    setIsOpen(false);
+  };
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setTempQuery(e.target.value);
     if (e.target.value.trim() === "") {
@@ -35,19 +48,21 @@ const NavBar: React.FC = () => {
       setSearchQuery(tempQuery);
     }
   };
+
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter") {
       handleSearchClick();
     }
   };
+
   return (
     <>
-      <div className="conatiner-fluid">
+      <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12 col-sm-12 d-flex">
             <div className="NavBar col-lg-12 col-sm-12 d-flex">
               <div className="header-logo">
-                <img src={logo} alt="" className="header-image" />
+                <img src={logo} alt="Logo" className="header-image" />
               </div>
               <div className="NavP-2 d-flex">
                 <li>
@@ -67,9 +82,9 @@ const NavBar: React.FC = () => {
                 <span className="list-text">Add Listing</span>
               </button>
               <NavLink className="bag" to="/Cart">
-                <img src={bag} alt="" onClick={handleClick} />
+                <img src={bag} alt="Cart" />
               </NavLink>
-              <img src={lang} alt="" className="lang" />
+              <img src={lang} alt="Language" className="lang" />
               <div
                 className="profile border border-2 rounded-pill"
                 onClick={toggle}
@@ -77,7 +92,27 @@ const NavBar: React.FC = () => {
                 <div className="nav-img">
                   <HiMenuAlt2 />
                 </div>
-                <img src={profile} className="profile-img" alt="" />
+                {currentUser ? (
+                  profileImg ? (
+                    <img
+                      src={profileImg}
+                      alt="User Profile"
+                      className="profile-img profileImg menu-img"
+                    />
+                  ) : (
+                    <img
+                      src={profile}
+                      alt="Default Profile"
+                      className="profile-img"
+                    />
+                  )
+                ) : (
+                  <img
+                    src={profile}
+                    alt="Default Profile"
+                    className="profile-img"
+                  />
+                )}
               </div>
               <div className="menu-icon" onClick={toggle}>
                 <HiMenuAlt2 />
@@ -85,29 +120,72 @@ const NavBar: React.FC = () => {
               {isOpen && (
                 <>
                   <ul className="dropdown-menuu">
-                    <li>
-                      <NavLink to="/">Home</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/Categories">Categories</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/Wishlist">Wishlist</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/Promotion">Promotion</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Login/Register</NavLink>
-                    </li>
+                    {currentUser ? (
+                      <>
+                        <li>
+                          <NavLink to="/profile">Profile</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/dashboard">Dashboard</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/" onClick={handleLogOut}>
+                            LogOut
+                          </NavLink>
+                        </li>
+                      </>
+                    ) : (
+                      <>
+                        <li>
+                          <NavLink to="/">Home</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/Categories">Categories</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/Wishlist">Wishlist</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/Promotion">Promotion</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/" onClick={toggleAuthModal}>
+                            Login/Register
+                          </NavLink>
+                        </li>
+                      </>
+                    )}
                   </ul>
                   <ul className="dropdown-menu2">
-                    <li>
-                      <NavLink to="/Promotion">Promotion</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Login/Register</NavLink>
-                    </li>
+                    {currentUser ? (
+                      <>
+                        <li>
+                          <NavLink to="/profile">View Profile</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/Promotion">Promotion</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/">My Orders</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/" onClick={handleLogOut}>
+                            LogOut
+                          </NavLink>
+                        </li>
+                      </>
+                    ) : (
+                      <>
+                        <li>
+                          <NavLink to="/Promotion">Promotion</NavLink>
+                        </li>
+                        <li>
+                          <NavLink to="/" onClick={toggleAuthModal}>
+                            Login/Register
+                          </NavLink>
+                        </li>
+                      </>
+                    )}
                   </ul>
                 </>
               )}
@@ -118,7 +196,7 @@ const NavBar: React.FC = () => {
           <div className="col-lg-12 col-sm-12">
             <div className="search-container rounded-pill">
               <div className="search-box" id="search-box">
-                <img src={locationBlue} alt="" className="location" />
+                <img src={locationBlue} alt="Location" className="location" />
                 <input
                   type="text"
                   placeholder="Search Product By Location"
@@ -135,7 +213,7 @@ const NavBar: React.FC = () => {
                 />
                 <img
                   src={globalSearch}
-                  alt=""
+                  alt="Search"
                   className="search-icon"
                   onClick={handleSearchClick}
                   style={{
@@ -148,6 +226,9 @@ const NavBar: React.FC = () => {
           </div>
         </div>
       </div>
+      {showSignIn && (
+        <SignInPage showSignIn={showSignIn} setShowSignIn={setShowSignIn} />
+      )}
     </>
   );
 };
