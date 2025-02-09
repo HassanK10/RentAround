@@ -43,14 +43,13 @@ interface AuthProviderProps {
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [currentUser, setCurrentUser] = useState<User | null>(null);
 
-  // Google Authentication
   const loginWithGoogle = async (): Promise<UserCredential | null> => {
     try {
       const provider = new GoogleAuthProvider();
       provider.setCustomParameters({ prompt: "select_account" });
       const result = await signInWithPopup(auth, provider);
       setCurrentUser(result.user);
-      localStorage.setItem("currentUser", JSON.stringify(result.user)); // Save user
+      localStorage.setItem("currentUser", JSON.stringify(result.user));
       return result;
     } catch (error) {
       console.error("Google Sign-In Error:", error);
@@ -58,10 +57,9 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     }
   };
 
-  // ✅ **Fixed: Send Magic Link**
   const sendMagicLink = async (email: string): Promise<void> => {
     const actionCodeSettings = {
-      url: "http://localhost:3000/", // Update with your actual domain
+      url: "http://localhost:3000/",
       handleCodeInApp: true,
     };
 
@@ -83,7 +81,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
           return;
         }
 
-        // Sign in the user with email link
         const result = await signInWithEmailLink(
           auth,
           email,
@@ -91,7 +88,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         );
         setCurrentUser(result.user);
         localStorage.setItem("currentUser", JSON.stringify(result.user));
-        localStorage.removeItem("emailForSignIn"); // Remove stored email
+        localStorage.removeItem("emailForSignIn");
 
         console.log("✅ Successfully signed in with email link!");
       }
@@ -100,21 +97,18 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     }
   };
 
-  // ✅ **Automatically Complete Sign-In When Redirected**
   useEffect(() => {
     if (isSignInWithEmailLink(auth, window.location.href)) {
       completeSignInWithEmailLink();
     }
   }, []);
 
-  // Logout function
   const logOut = async () => {
     await signOut(auth);
     localStorage.removeItem("currentUser");
     setCurrentUser(null);
   };
 
-  // Persist user session
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
