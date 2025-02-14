@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import NavBar from "./NavBar";
-import Page6 from "./Page6";
-import { TbCameraPlus } from "react-icons/tb";
-import { SearchProvider } from "./SearchContext";
-import "../App.css";
+import React, { useState, useEffect } from "react" 
+import NavBar from "./NavBar" 
+import Page6 from "./Page6" 
+import { TbCameraPlus } from "react-icons/tb" 
+import { SearchProvider } from "./SearchContext" 
+import "../App.css" 
 
 export interface Data {
-  firstname: string;
-  lastname: string;
-  image: string;
+  firstname: string 
+  lastname: string 
+  image: string 
 }
 
 const EditProfile = () => {
@@ -19,74 +19,74 @@ const EditProfile = () => {
     gender: "Male",
     phoneNumber: "",
     bio: "",
-  });
+  }) 
 
   const [image, setImage] = useState<string | null>(
     localStorage.getItem("profileImage")
-  );
+  ) 
 
   useEffect(() => {
-    const storedImage = localStorage.getItem("profileImage");
-    const storedFirstName = localStorage.getItem("first name");
-    const storedLastName = localStorage.getItem("last name");
+    const storedImage = localStorage.getItem("profileImage") 
+    const storedFirstName = localStorage.getItem("first name") 
+    const storedLastName = localStorage.getItem("last name") 
 
-    if (storedImage) setImage(storedImage);
+    if (storedImage) setImage(storedImage) 
     if (storedFirstName || storedLastName) {
       setFormData((prevFormData) => ({
         ...prevFormData,
         firstName: storedFirstName || "",
         lastName: storedLastName || "",
-      }));
+      })) 
     }
-  }, []);
+  }, []) 
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value }) 
     if (formData.phoneNumber.length > 0) {
-      const err = document.getElementById("err");
+      const err = document.getElementById("err") 
       if (err) {
-        err.innerHTML = "";
+        err.innerHTML = "" 
       }
     } else {
-      const err = document.getElementById("err");
+      const err = document.getElementById("err") 
       if (err) {
-        err.innerHTML = "Phone Number is Required";
+        err.innerHTML = "Phone Number is Required" 
       }
     }
-  };
+  } 
 
   const handleImageChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.files && event.target.files[0]) {
-      const file = event.target.files[0];
-      const reader = new FileReader();
+      const file = event.target.files[0] 
+      const reader = new FileReader() 
       reader.onloadend = () => {
-        const imageData = reader.result as string;
-        setImage(imageData);
-        localStorage.setItem("profileImage", imageData);
-      };
-      reader.readAsDataURL(file);
+        const imageData = reader.result as string 
+        setImage(imageData) 
+        localStorage.setItem("profileImage", imageData) 
+      } 
+      reader.readAsDataURL(file) 
     }
-  };
+  } 
 
   const saveData = (e: React.MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    localStorage.setItem("first name", formData.firstName);
-    localStorage.setItem("last name", formData.lastName);
-    if (image) localStorage.setItem("profileImage", image);
+    e.preventDefault() 
+    localStorage.setItem("first name", formData.firstName) 
+    localStorage.setItem("last name", formData.lastName) 
+    if (image) localStorage.setItem("profileImage", image) 
     if (formData.phoneNumber.length === 0) {
-      const err = document.getElementById("err");
+      const err = document.getElementById("err") 
       if (err) {
-        err.innerHTML = "Phone Number is Required";
+        err.innerHTML = "Phone Number is Required" 
       }
     } else {
-      const err = document.getElementById("err");
+      const err = document.getElementById("err") 
       if (err) {
-        err.innerHTML = "";
+        err.innerHTML = "" 
       }
     }
-  };
+  } 
   return (
     <>
       <SearchProvider>
@@ -191,12 +191,12 @@ const EditProfile = () => {
               />
             </div>
           </div>
-          ;
+          
         </div>
         <Page6 />
       </SearchProvider>
     </>
-  );
-};
+  ) 
+} 
 
-export default EditProfile;
+export default EditProfile 

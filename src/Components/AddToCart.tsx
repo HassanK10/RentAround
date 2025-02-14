@@ -9,7 +9,6 @@ import { DemoContainer, DemoItem } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
-import "react-datepicker/dist/react-datepicker.css";
 import { SearchProvider } from "./SearchContext";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
@@ -42,7 +41,7 @@ const AddToCart = () => {
   if (error) return <p>Error: Something went wrong!</p>;
 
   const card = cards?.find((c) => slugify(c.title, { lower: true }) === title);
-  if (!card) return <p>Card not found!</p>;
+  if (!card) return <p>Product not found!</p>;
   const handleAddToCart = () => {
     addItemToCart.mutate({
       id: card.id,
@@ -64,6 +63,7 @@ const AddToCart = () => {
                 <h2 className="cart-title">{card.title}</h2>
                 <div className="image">
                   <img src={card.image} alt="" className="cart-image" />
+                  
                   <div className="product-description">
                     <h2>Product Desicription</h2>
                   </div>

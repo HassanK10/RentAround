@@ -180,7 +180,7 @@
     font-size: 6vw;
   }
   .Page-4 {
-    height: 100vh;
+    height: 135vh;
     position: relative;
   }
   .Page-4 .work {
@@ -201,18 +201,25 @@
     margin-bottom: 2vw;
     font-size: 5vw;
   }
-  .page4.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 60vw;
-    width: 28vw;
-  }
   .services {
     position: relative;
     display: flex;
     flex-direction: column;
-    top: 80%;
+    top: 60%;
+  }
+  .service-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .service-card h1{
+    font-size: 8vw;
+  }
+  .service-card h4{
+    white-space: nowrap;
+    font-size: 5vw;
   }
   .Page-5 h2 {
     font-size: 6vw;
@@ -284,7 +291,7 @@
     height: 13vw;
     margin-bottom: 5vw;
   }
-  .cart-left .description{
+  .cart-left .description {
     width: 90%;
     height: 13vw;
   }
@@ -292,16 +299,128 @@
     font-size: 4vw;
     padding: 2vw 0 0 2vw;
   }
-  .cart-left .description p{
+  .cart-left .description p {
     padding: 2vw 0 0 2vw;
   }
-  .price .price2{
+  .price .price2 {
     position: absolute;
     right: 3%;
   }
-  .cart-button{
+  .cart-button {
     padding: 2vw 13vw;
     margin-bottom: 5vw;
+  }
+  .sign-in-content {
+    height: 95%;
+    width: 95%;
+  }
+  .sign-in-content .google-login {
+    padding: 3.5vw 13.5vw;
+  }
+  .google-login span {
+    font-weight: 600;
+  }
+  .google-login .google-icon {
+    font-size: 4.8vw;
+  }
+  .sign-in-content .divider {
+    position: relative;
+    bottom: 10%;
+  }
+  .auth-form {
+    position: relative;
+    bottom: 14%;
+    left: 8%;
+  }
+  .auth-form button {
+    padding: 2vw 3.9vw;
+  }
+  .auth-form p {
+    font-size: 4vw;
+  }
+  .auth-form input {
+    width: 79.5%;
+  }
+  .sign-in-content h3 {
+    font-size: 5.5vw;
+    position: relative;
+    top: -19%;
+  }
+  .sign-in-content .header-logo {
+    position: relative;
+    top: -10%;
+    left: 5%;
+  }
+  .sign-in-content .header-logo .header-img {
+    height: 55vw;
+    width: 55vw;
+  }
+  .profile-container{
+    height: 98vh;
+    width: 99%;
+  }
+  .edit-section .vertical-line{
+    display: none;
+  }
+  .edit-section {
+    position: absolute;
+    bottom: 30%;
+    left: -5%;
+  }
+  .profile-buttons a{
+    padding: 2.6vw 21vw;
+    margin-bottom: 10px;
+  }
+  .profile-container .placeholder-img{
+    height: 37vw;
+    width: 37vw;
+    position: absolute;
+    top: 2%;
+    left: 30%;
+  }
+  .profile-info h2{
+    font-size: 6vw;
+    margin-left: 8vw;
+    position: relative;
+    top: 0;
+  }
+  .profile-info p{
+    font-size: 5vw;
+    margin-left: 1vw;
+  }
+  .profile-info h6{
+    position: relative;
+    top: 12vh;
+    margin-left: 3vw;
+  }
+  .Edit-Profile{
+    height: 150vh;
+  }
+  .Edit-Profile .information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+  }
+  .information input{
+    padding: 1vw 15vw;
+  }
+  .upload{
+    height: 65vw;
+    width: 75vw;
+    position: relative;
+    left: 7%;
+  }
+  .upload p{
+    font-size: 5vw;
+    position: relative;
+    top:27%;
+  }
+  .upload button{
+    padding: 1.7vw 20vw;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 400px) {
@@ -333,6 +452,28 @@
   .page4.card {
     width: 30vw;
     height: 100vw;
+  }
+  .sign-in-content .google-login {
+    padding: 3.5vw 12vw;
+  }
+  .google-login span {
+    font-size: 4vw;
+  }
+  .sign-in-content .divider {
+    position: relative;
+    bottom: 8%;
+  }
+  .auth-form {
+    position: relative;
+    bottom: 10%;
+  }
+  .sign-in-content h3 {
+    position: relative;
+    top: -15%;
+    font-size: 7vw;
+  }
+  .upload{
+    height: 70vw;
   }
 }
 @media screen and (max-width: 320px) {
@@ -426,23 +567,83 @@
   .bottom li a {
     font-size: 4.9vw;
   }
-  .cart-right{
+  .cart-right {
     position: relative;
   }
-  .price{
+  .price {
     position: relative;
     top: 0;
   }
-  .price .price2{
+  .price .price2 {
     position: absolute;
     right: -19%;
   }
-  .total-container .h2{
+  .total-container .h2 {
     position: absolute;
     right: 5%;
   }
-  .total-container button{
+  .total-container button {
     padding: 1.5vw 9vw;
+  }
+  .sign-in-content .google-login {
+    padding: 4.8vw 4.5vw;
+  }
+  .google-login span {
+    font-size: 5vw;
+    position: relative;
+    right: 0%;
+  }
+  .google-login .google-icon {
+    position: relative;
+    left: -3%;
+  }
+  .auth-form {
+    position: relative;
+    bottom: 10%;
+  }
+  .sign-in-content .divider {
+    bottom: 8%;
+  }
+  .auth-form p {
+    font-size: 5vw;
+  }
+  .sign-in-content h3 {
+    font-size: 7.8vw;
+    position: relative;
+    top: -15%;
+    left: 17%;
+  }
+  .sign-in-content .header-logo {
+    position: relative;
+    left: 20%;
+    top: -7.5%;
+  }
+  .sign-in-content .header-logo .header-img {
+    height: 65vw;
+    width: 65vw;
+  }
+  .upload {
+    height: 84vw;
+  }
+  .information input{
+    padding: 1.5vw 8vw;
+  }
+  .Page-4{
+    height: 120vh;
+  }
+  .services{
+    position: relative;
+    top: 30%;
+  }
+  .Page-4 .work{
+    font-size: 7vw;
+    position: relative;
+    left: 28%;
+    top: 20%;
+  }
+  .Page-4 .buttons{
+    position: relative;
+    top: 20%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1020px) {
@@ -589,6 +790,10 @@
     left: 0;
     top: -2%;
   }
+  .Page-4{
+    height: 110vh;
+    width: 100vw;
+  }
   .Page-4 h1 {
     font-size: 6vw;
     position: relative;
@@ -603,11 +808,37 @@
     font-size: 2.8vw;
   }
   .services {
+    display: flex;
     position: relative;
-    top: 50%;
+    top: 30%;
   }
-  .page4.card {
-    height: 32vw;
+  .service-cards{
+    display: flex;
+    position: relative;
+    left: 0;
+    gap: 0;
+  }
+  .service-card{
+    position: relative;
+    left: -30%;
+  }
+  .service-card h1{
+    position: relative;
+    top: 0%;
+    left: 0;
+    font-size: 7.5vw;
+    font-weight: bold;
+  }
+  .service-card h4{
+    font-size: 4vw;
+  }
+  .service-card:nth-child(2){
+    position: relative;
+    left: -80%;
+  }
+  .service-card:nth-child(3){
+    position: absolute;
+    top: 100%;
   }
   .Page-5 h2 {
     font-size: 6vw;
@@ -649,45 +880,116 @@
     left: 46%;
     top: 30%;
   }
-  .cart-left .cart-title{
+  .cart-left .cart-title {
     font-size: 3vw;
   }
-  .cart-image{
+  .cart-image {
     width: 98%;
     height: 60vw;
   }
-  .cart-left .product-description{
+  .cart-left .product-description {
     width: 98%;
     height: 7vw;
     padding: 1.5vw 0 0 1.5vw;
   }
-  .cart-left .description{
+  .cart-left .description {
     width: 98%;
     height: 7vw;
     padding: 1.5vw 0 0 1.5vw;
   }
-  .description h2{
+  .description h2 {
     font-size: 2.8vw;
   }
-  .product-description h2{
+  .product-description h2 {
     font-size: 2.8vw;
   }
-  .cart-right{
+  .cart-right {
     position: relative;
     bottom: 0%;
     width: 100%;
     height: 165vh;
   }
-  .price h2{
+  .price h2 {
     font-size: 2.4vw;
   }
-  .price .price2{
+  .price .price2 {
     position: absolute;
     right: 3.8%;
   }
-  .cart-button{
+  .cart-button {
     padding: 2vw 18vw;
     margin-bottom: 5vw;
+  }
+  .sign-in-content{
+    height: 92%;
+    width: 90%;
+  }
+  .sign-in-content .header-logo .header-img{
+    height: 11vw;
+  }
+  .sign-in-content h3{
+    font-size: 3.5vw;
+  }
+  .sign-in-content .google-login{
+    padding: 2vw 15vw;
+  }
+  .google-login span{
+    font-weight: 600;
+  }
+  .google-login .google-icon{
+    font-size: 2.5vw;
+  }
+  .Edit-Profile .information{
+    position: absolute;
+    top: 0;
+  }
+  .upload button{
+    padding: 1.3vw 12vw;
+  }
+  .upload p{
+    font-size: 2.5vw;
+  }
+  .image-container{
+    height: 125px; 
+    width: 125px;
+  }
+  .edit-section .vertical-line{
+    position: relative;
+    left: 55%;
+    height: 25vw;
+  }
+  .profile-container .placeholder-img{
+    height: 20vw;
+    width: 20vw;
+    position: absolute;
+    top: 22%;
+  }
+  .edit-section{
+    position: absolute;
+    top: 12%;
+    right: 0.5%;
+  }
+  .profile-buttons a{
+    padding: 1.2vw 2vw;
+    margin-bottom: 1vw;
+  }
+  .profile-info h2{
+    font-size: 3.5vw;
+    margin-left: 4vw;
+  }
+  .profile-info p{
+    font-size: 2.5vw;
+    margin-left: 1.5vw;
+  }
+  .profile-info h6{
+    font-size: 1.9vw;
+    position: relative;
+    top: 11vh;
+    margin-left: 1vw;
+  }
+  .profile .profileImg{
+    height: 4vw;
+    width: 4vw;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -811,14 +1113,26 @@
     right: 53%;
   }
   .Page-4 {
-    height: 70vh;
+    height: 90vh;
   }
-  .page4.card {
-    height: 30vw;
+  .service-cards{
+    position: absolute;
+    gap: 1.6vw;
+  }
+  .service-card p{
+    font-size: 1.7vw;
+    white-space: nowrap;
+  }
+  .services-2 .service-cards{
+    position: absolute;
+    gap: 0.8vw;
+  }
+  .service-card h4{
+    font-size: 3.7vw;
   }
   .Page-4 .work {
     position: relative;
-    left: 35%;
+    left: 30%;
   }
   .Page-4 h1 {
     font-size: 6vw;
@@ -827,7 +1141,8 @@
     padding: 1.5vw 5vw;
     font-size: 2.3vw;
     position: relative;
-    left: 32%;
+    left: 27%;
+    margin-right: 4vw;
   }
   .Page-5 .test-cards {
     height: 75vh;
@@ -854,25 +1169,62 @@
   .social-media li a {
     font-size: 1.5vw;
   }
-  .cart-left .description{
+  .cart-left .description {
     height: 4vw;
   }
-  .price h2{
+  .price h2 {
     font-size: 1.7vw;
   }
-  .price .price2{
+  .price .price2 {
     position: absolute;
     right: 7%;
   }
-  .cart-button{
+  .cart-button {
     padding: 0.9vw 5vw;
     margin-bottom: 2vw;
   }
-  .Add-To-Cart{
+  .Add-To-Cart {
     height: 170vh;
   }
-  .cart-right .map{
+  .cart-right .map {
     width: 39vw;
+  }
+  .sign-in-content{
+    height: 92%;
+  }
+  .sign-in-content .header-logo .header-img{
+    height: 8vw;
+  }
+  .sign-in-content h3{
+    font-size: 2.5vw;
+  }
+  .sign-in-content .google-login{
+    padding: 1.5vw 11.3vw;
+  }
+  .profile-container .placeholder-img{
+    height: 15vw;
+    width: 15vw;
+    position: relative;
+    top: 0;
+  }
+  .profile-info h2{
+    font-size: 2.4vw;
+    margin-left: 2vw;
+  }
+  .profile-info p{
+    font-size: 1.7vw;
+  }
+  .profile-info h6{
+    position: relative;
+    top: 10vh;
+  }
+  .upload .image-container{
+    height: 120px;
+    width: 120px;
+  }
+  .profile .profileImg{
+    height: 2.8vw;
+    width: 2.8vw;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1500px) {
@@ -975,10 +1327,51 @@
   .social-media li a {
     font-size: 1.2vw;
   }
-  .cart-button{
+  .cart-button {
     padding: 1vw 6vw;
   }
-  .Add-To-Cart{
+  .Add-To-Cart {
     height: 110vh;
+  }
+  .sign-in-content {
+    height: 70%;
+  }
+  .sign-in-content .header-logo .header-img{
+    height: 5.5vw;
+  }
+  .sign-in-content h3{
+    font-size: 2vw;
+  }
+  .sign-in-content .google-login{
+    padding: 1vw 8vw;
+  }
+  .profile-container{
+    height: 40vh;
+  }
+  .edit-section{
+    position: relative;
+  }
+  .profile-buttons{
+    position: relative;
+    margin-top: 3.3vw;
+  }
+  .edit-section .vertical-line{
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+  .profile-container .placeholder-img{
+    height: 12vw;
+    width: 12vw;
+    position: absolute;
+    top: 23%;
+    left: 2%;
+  }
+  .upload{
+    height: 20vw;
+  }
+  .profile .profileImg{
+    height: 2.8vw;
+    width: 2.8vw;
   }
 }

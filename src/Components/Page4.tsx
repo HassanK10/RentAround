@@ -48,37 +48,25 @@ const Page4 = () => {
               className={`services ${activeTab === "Buyers" ? "" : "hidden"}`}
               style={{ display: activeTab === "Buyers" ? "block" : "none" }}
             >
-              <div className="card page4">
-                <div className="card-body text-center page4">
-                  <h5 className="card-title" id="card-title">
-                    1
-                  </h5>
-                  <h6 id="intro">
+              <div className="service-cards">
+                <div className="col-lg-4 col-md-12 col-sm-12 service-card">
+                  <h1>1</h1>
+                  <h4>
                     Browse with <br /> Confidence
-                  </h6>
-                  <p id="des">
+                  </h4>
+                  <p>
                     Explore verified listings from trusted <br /> members
                   </p>
                 </div>
-              </div>
-              <div className="card page4 ">
-                <div className="card-body text-center page4">
-                  <h5 className="card-title page4" id="card-title">
-                    2
-                  </h5>
-                  <h6 id="intro">Seemless Booking</h6>
-                  <p id="des">
-                    Easily message owners and secure the perfect rental.
-                  </p>
+                <div className="col-lg-4 col-md-12 col-sm-12 service-card">
+                  <h1>2</h1>
+                  <h4>Seemless Booking</h4>
+                  <p>Easily message owners and secure the <br /> perfect rental.</p>
                 </div>
-              </div>
-              <div className="card page4">
-                <div className="card-body text-center page4">
-                  <h5 className="card-title page4" id="card-title">
-                    3
-                  </h5>
-                  <h6 id="intro">Enjoy & Return</h6>
-                  <p id="des">
+                <div className="col-lg-4 col-md-12 col-sm-12 service-card">
+                  <h1>3</h1>
+                  <h4>Enjoy & Return</h4>
+                  <p>
                     Experience your rental and return it when <br /> you're
                     done, hassle-free.
                   </p>
@@ -91,36 +79,29 @@ const Page4 = () => {
               }`}
               style={{ display: activeTab === "Sellers" ? "block" : "none" }}
             >
-              <div className="card page4">
-                <div className="card-body page4 text-center">
-                  <h5 className="card-title page4" id="card-title">
-                    1
-                  </h5>
-                  <h6 id="intro">List it Fast</h6>
-                  <p id="des">
-                    Upload your items, and let people find <br />
-                    what they need.
+              <div className="service-cards">
+                <div className="col-lg-4 col-md-12 col-sm-12 service-card">
+                  <h1>1</h1>
+                  <h4>List it Fast</h4>
+                  <p>
+                    Upload your items, and let people find <br /> what they
+                    need.
                   </p>
                 </div>
-              </div>
-              <div className="card page4">
-                <div className="card-body text-center page4">
-                  <h5 className="card-title page4" id="card-title">
-                    2
-                  </h5>
-                  <h6 id="intro">Manage Effortlessly</h6>
-                  <p id="des">
+                <div className="col-lg-4 col-md-12 col-sm-12 service-card">
+                  <h1>2</h1>
+                  <h4>
+                    Manage <br />
+                    Effortlessly
+                  </h4>
+                  <p>
                     Approve rentals and coordinate directly <br /> in-app.
                   </p>
                 </div>
-              </div>
-              <div className="card page4">
-                <div className="card-body page4 text-center">
-                  <h5 className="card-title page4" id="card-title">
-                    3
-                  </h5>
-                  <h6 id="intro">Earn Smart</h6>
-                  <p id="des">
+                <div className="col-lg-4 col-md-12 col-sm-12 service-card">
+                  <h1>3</h1>
+                  <h4>Earn smart</h4>
+                  <p>
                     Turn your idle items into a side hustle, right <br /> from
                     your home.
                   </p>

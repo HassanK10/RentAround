@@ -8,6 +8,7 @@ import { UserCredential } from "firebase/auth";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import "../Responsive.css"
 
 interface SignInPageProps {
   showSignIn: boolean;

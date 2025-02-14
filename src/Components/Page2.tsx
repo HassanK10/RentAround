@@ -2,11 +2,11 @@ import "../App.css";
 import "../loader.css";
 import "../button.css";
 import Cart from "./Cart";
-import "../Responsive.css"
+import "../Responsive.css";
 import { useQuery } from "@tanstack/react-query";
 import { useSearch } from "./SearchContext";
 import { NavLink } from "react-router-dom";
-import slugify from 'slugify'
+import slugify from "slugify";
 
 interface Card {
   id: string;
@@ -86,14 +86,14 @@ const Page2 = () => {
           </div>
         )}
         {!isLoading && !isError && data && (
-          <div className="row page-2-cards">
+          <div className="row page-2-cards bg-red-500">
             {limitedCards?.map((card) => (
               <div key={card.id} className="col-12 col-sm-6 col-lg-3">
                 <NavLink
                   to={`/product/${slugify(card.title, { lower: true })}`}
                   style={{ textDecoration: "none" }}
                 >
-                  <div className="card caard" onClick={handleClick}>
+                  <div className="card caard rounded-2xl" onClick={handleClick}>
                     <img
                       src={card.image}
                       className="card-img-top img-fluid"

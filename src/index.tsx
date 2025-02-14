@@ -6,16 +6,18 @@ import Promotion from "./Components/Promotion";
 import Wishlist from "./Components/Wishlist";
 import Cart from "./Components/Cart";
 import Profile from "./Components/Profile";
+import MyListing from "./Components/MyListing";
 import AddToCart from "./Components/AddToCart";
+import Dashboard from "./Components/Dashboard";
 import SignInPage from "./Components/SignInPage";
 import ReactDOM from "react-dom/client";
 import AuthProvider from "./Context/AuthContext";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import EditProfile from "./Components/EditProfile";
+import "./index.css";
 
 const IndexApp = () => {
   const [showSignIn, setShowSignIn] = useState(false);
@@ -90,6 +92,14 @@ const IndexApp = () => {
     {
       path: "/edit-profile",
       element: <EditProfile />,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
+    },
+    {
+      path: "my-listing",
+      element: <MyListing />,
     },
   ]);
   return (

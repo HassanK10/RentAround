@@ -11,18 +11,20 @@ import { HiMenuAlt2 } from "react-icons/hi";
 import { useSearch } from "./SearchContext";
 import { useAuth } from "../Context/AuthContext";
 import "../Responsive.css";
+import "../index.css";
 import "../App.css";
 
 const NavBar: React.FC = () => {
-  const profileImg = localStorage.getItem("profileImage")
+  const profileImg = localStorage.getItem("profileImage");
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [showSignIn, setShowSignIn] = useState<boolean>(false);
   const { setSearchQuery } = useSearch();
   const [tempQuery, setTempQuery] = useState<string>("");
   const { currentUser } = useAuth();
+
   const { logOut } = useAuth();
 
-  const handleLogOut = async (e:React.MouseEvent<HTMLAnchorElement>) => {
+  const handleLogOut = async (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     await logOut();
   };
@@ -60,7 +62,7 @@ const NavBar: React.FC = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-12 col-sm-12 d-flex">
-            <div className="NavBar col-lg-12 col-sm-12 d-flex">
+            <div className="NavBar col-lg-12 col-sm-12 d-flex bg-orange-500">
               <div className="header-logo">
                 <img src={logo} alt="Logo" className="header-image" />
               </div>
@@ -74,6 +76,11 @@ const NavBar: React.FC = () => {
                 <li>
                   <NavLink to="/Wishlist">Wishlist</NavLink>
                 </li>
+                {currentUser && (
+                  <li>
+                    <NavLink to="/my-listing">My Listing</NavLink>
+                  </li>
+                )}
                 <li>
                   <NavLink to="/Promotion">Promotion</NavLink>
                 </li>
