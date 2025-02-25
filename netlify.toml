@@ -1,0 +1,2 @@
+[build.environment]
+GO_VERSION = "none"
