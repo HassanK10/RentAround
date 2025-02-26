@@ -108,7 +108,7 @@ function Page5() {
         clearInterval(autoPlayRef.current);
       }
     };
-  }, [currentSlide]);
+  });
 
   const handleTouchStart = (e: TouchEvent) => {
     if (autoPlayRef.current) {
